@@ -15,8 +15,7 @@ class House:
         return self.number_of_floors
 
     def __str__(self):
-        return self.name
-
+        return (f'Название: {self.name}, кол-во этажей: {self.number_of_floors}')
 
 house1 = House('ЖК Изумрудный', 18)
 house2 = House('Поселок ЦДК', 2)
@@ -24,5 +23,5 @@ house1.go_to(5)
 house2.go_to(10)
 print(len(house1))
 print(len(house2))
-print('Название:', str(house1), 'кол-во этажей:', len(house1))
-print('Название:', str(house2), 'кол-во этажей:', len(house2))
+print(house1)
+print(house2)
